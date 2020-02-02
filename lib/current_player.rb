@@ -13,6 +13,7 @@ def turn_count(board)
 end
 
 def current_player(board)
+  require "pry";binding.pry
   if turn_count(board) == 0
     puts "X"
   elsif turn_count(board).even?
